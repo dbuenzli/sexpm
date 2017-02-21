@@ -1,0 +1,5 @@
+true : bin_annot, safe_string, package(uutf), package(fmt)
+<src> : include
+<test> : include
+<test/sexptrip*> : package(cmdliner), package(bos.setup)
+<test/test_codec*> : package(cmdliner)

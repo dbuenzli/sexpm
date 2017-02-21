@@ -1,0 +1,23 @@
+opam-version: "1.2"
+maintainer: "Daniel Bünzli <daniel.buenzl i@erratique.ch>"
+authors: ["Daniel Bünzli <daniel.buenzl i@erratique.ch>"]
+homepage: "http://erratique.ch/software/sexpm"
+doc: "http://erratique.ch/software/sexpm/doc"
+license: "ISC"
+dev-repo: "http://erratique.ch/repos/sexpm.git"
+bug-reports: "https://github.com/dbuenzli/sexpm/issues"
+tags: [ "org:erratique" "codec" "sexp" ]
+available: [ ocaml-version >= "4.03.0"]
+depends: [
+  "ocamlfind" {build}
+  "ocamlbuild" {build}
+  "topkg" {build}
+  "uutf"
+]
+depopts: [
+   "bos"
+g   "cmdliner"
+]
+build: [
+  "ocaml" "pkg/pkg.ml" "build"
+          "--pinned" pinned ]

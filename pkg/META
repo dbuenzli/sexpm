@@ -1,0 +1,7 @@
+description = "s-expression codecs and updates for OCaml"
+version = "%%VERSION_NUM%%"
+requires = ""
+archive(byte) = "sexpm.cma"
+archive(native) = "sexpm.cmxa"
+plugin(byte) = "sexpm.cma"
+plugin(native) = "sexpm.cmxs"
